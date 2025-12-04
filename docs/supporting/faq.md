@@ -2,7 +2,7 @@
 TOCTitle: FAQ
 ContentId: E02F97FD-842B-4D27-B461-37DD18B2582E
 PageTitle: Visual Studio Code Frequently Asked Questions
-DateApproved: 08/07/2025
+DateApproved: 11/12/2025
 MetaDescription: Visual Studio Code Frequently Asked Questions
 ---
 # Visual Studio Code FAQ
@@ -66,9 +66,12 @@ Performance is our core priority and we are committed to maintaining the perform
 
 ### Can I disable AI functionality in VS Code?
 
-You can disable the built-in AI functionality in VS Code by selecting **Hide AI Features** in the Command Palette or selecting **Hide AI Features** from the Copilot menu in the VS Code title bar.
+You can disable the built-in AI features in VS Code with the `setting(chat.disableAIFeatures)` setting, similar to how you configure other features in VS Code. This disables and hides features like chat or inline suggestions in VS Code and disables the Copilot extensions. You can configure the setting at the workspace or user level.
 
-If you have already installed the Copilot extensions, you need to first uninstall the Copilot and Copilot Chat extensions from the Extensions view. After that, you can disable the AI features.
+Alternatively, use the **Learn How to Hide AI Features** action from the Chat menu in the title bar to access the setting.
+
+> [!NOTE]
+> If you have previously disabled the built-in AI features, your choice is respected upon updating to a new version of VS Code.
 
 ### If I disable AI functionality in VS Code, is my data still sent to Microsoft?
 
@@ -104,9 +107,9 @@ Additionally, 32-bit OEM support has been dropped with Windows 10, version 2004.
 
 ### Can I run VS Code on old macOS versions?
 
-VS Code desktop version starting with 1.96 (November 2024) is deprecating support for macOS Catalina (version 10.15 and older). Starting with VS Code 1.98 (February 2025), we will stop updating VS Code on macOS Catalina (version 10.15 and older). You will need to upgrade to a newer macOS version to use later versions of VS Code.
+VS Code desktop version starting with 1.105 (September 2025) is deprecating support for macOS Big Sur (version 11.0 and older). Starting with VS Code 1.107 (November 2025), we will stop updating VS Code on macOS Big Sur (version 11.0 and older). You will need to upgrade to a newer macOS version to use later versions of VS Code.
 
-VS Code will no longer provide product updates or security fixes on macOS Catalina (versions 10.15 and older) and VS Code version 1.97 will be the last available release for macOS Catalina (10.15 and older). You can learn more about upgrading your macOS version at [support.apple.com](https://support.apple.com/en-us/HT201260).
+VS Code will no longer provide product updates or security fixes on macOS Big Sur (versions 11.0 and older) and VS Code version 1.106 will be the last available release for macOS Big Sur (11.0 and older). You can learn more about upgrading your macOS version at [support.apple.com](https://support.apple.com/en-us/HT201260).
 
 ### Can I run VS Code on older Linux distributions?
 
